@@ -1,0 +1,15 @@
+.container{
+    /* background-color: red;    */
+    height: auto;
+    padding-bottom: 3rem;
+}
+.dplogo{
+    width: 10rem;
+}
+.wrap-nav{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
