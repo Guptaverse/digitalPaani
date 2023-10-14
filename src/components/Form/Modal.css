@@ -9,13 +9,16 @@
     /* background-color: green; */
     border-radius: 15px;
     /* width: 100%; */
-    width: 25vw;
-    height: auto;
+    /* width: 25vw; */
+    height: 250px;
     margin: 10px;
     font-size: 1.2rem;
     font-weight: 450;
     display: flex;
     flex-direction: column;
+    max-width: 350px;
+    /* overflow-x: scroll; */
+
 
     /* justify-content: space-between; */
 
@@ -43,6 +46,8 @@
 .modalCard-info{
     width: 100%;
     /* background-color: red; */
+    overflow-y: scroll;
+
     padding-top: 4px;
 
 }

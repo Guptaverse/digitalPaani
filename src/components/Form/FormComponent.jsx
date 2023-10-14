@@ -15,8 +15,8 @@ function FormComponent() {
   const [data, setData] = useState(JSON.parse(localStorage.getItem('Data')) || []);
 
   useEffect(() => {
+    /* USING REGEX TO VALIDATE THE INPUT STRINGS FOR NAME,EMAIL,CONTACT NO. */
     const isNameValid = /^[A-Z][a-z]*\s[A-Z][a-z]*$|^[A-Z][a-z]*$/i.test(formData.fullName);
-
     const isEmailValid = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(formData.email);
     const isContactValid = /^\d{10}$/.test(formData.contactNo);
 
