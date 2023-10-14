@@ -34,5 +34,5 @@ git clone https://github.com/Guptaverse/digitalPaani.git
 npm install
 ```
 
-This project is live and deployed at [Vercel](https://digital-paani.vercel.app/).
+This project is live and deployed at [https://digital-paani.vercel.app/](https://digital-paani.vercel.app/).
 
