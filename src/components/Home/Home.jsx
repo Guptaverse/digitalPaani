@@ -7,7 +7,7 @@ const Home = () => {
 
   return (
     <div className='container'>
-      <h1>HELLO CHANGE</h1>
+      
         <div className="wrap-nav">
           <img src='https://www.digitalpaani.com/wp-content/uploads/2023/10/DigitalPaani-Webiste.png' alt='brand' className='dplogo'/>
           
