@@ -3,17 +3,13 @@ import FormComponent from '../Form/FormComponent'
 import './Home.css'
 
 const Home = () => {
-  
 
-  // useEffect(()=>{
-  //   const fetchData = JSON.parse(localStorage.getItem('Data'));
-  //   if(fetchData.length!==0) setData(fetchData); 
-  // })
 
   return (
     <div className='container'>
+      <h1>HELLO CHANGE</h1>
         <div className="wrap-nav">
-          <img src='https://www.digitalpaani.com/wp-content/uploads/2023/10/DigitalPaani-Webiste.png' className='dplogo'/>
+          <img src='https://www.digitalpaani.com/wp-content/uploads/2023/10/DigitalPaani-Webiste.png' alt='brand' className='dplogo'/>
           
         </div>
         <FormComponent/>

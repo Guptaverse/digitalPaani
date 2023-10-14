@@ -1,71 +1,3 @@
-// import React, { useState, useEffect } from 'react';
-// import Registered from './Registered';
-
-// function FormComponent() {
-//   const [formData, setFormData] = useState({
-//     fullName: '',
-//     email: '',
-//     contactNo: '',
-//     bio: '',
-//     time:''
-//   });
-  
-//   const [errors, setErrors] = useState({});
-//   const [isFormValid, setIsFormValid] = useState(false);
-//   const [email,setEmail] =useState(false);
-//   const [contact,setContact] = useState(false);
-//   // const [data,setData] = useState(JSON.parse(localStorage.getItem('Data')) || [])
-//   let data =JSON.parse(localStorage.getItem('Data')) || []
-//   useEffect(() => {
-//     const isEmailValid = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(formData.email);
-//     const isContactValid = /^\d{10}$/.test(formData.contactNo);
-
-//     const newErrors = {};
-
-//     if (!formData.fullName) {
-//       newErrors.fullName = 'Full Name is required';
-//     }
-
-//     if (!isEmailValid) {
-//       newErrors.email = 'Invalid Email Address';
-//     }
-
-//     if (!isContactValid) {
-//       newErrors.contactNo = 'Invalid Contact Number (10 digits required)';
-//     }
-
-//     setErrors(newErrors);
-//     setIsFormValid(Object.keys(newErrors).length === 0);
-//   }, [formData,data]);
-
-//   const handleChange = (e) => {
-//     const { name, value } = e.target;
-//     if(name==="email") setEmail(true);
-//     if(name==="contactNo") setContact(true);
-//     setFormData({ ...formData, [name]: value });
-//   };
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     if (isFormValid) {
-//       formData.time = new Date().toString().substr(4,11);
-//       // setData([...data,formData]);
-//       data = [...data,formData];
-//       localStorage.setItem('Data', JSON.stringify(data));
-//       alert('Form data saved to local storage.');
-
-//     } else {
-    
-//       let fullName_flag = errors.fullName?true:false;
-//       let email_flag = errors.email?true:false;
-//       let contact_flag = errors.contactNo?true:false;
-
-//       alert(`please fix these feilds correctly before submitting : \n ${fullName_flag?"Name":""}${email_flag?"Email":""}${contact_flag?"Contact No":""}`)
-      
-      
-//     }
-//   };
-
 import React, { useEffect, useState } from 'react';
 import Registered from './Registered';
 import "./FormComponent.css"
@@ -80,8 +12,6 @@ function FormComponent() {
 
   const [errors, setErrors] = useState({});
   const [isFormValid, setIsFormValid] = useState(false);
-  const [email, setEmail] = useState(false);
-  const [contact, setContact] = useState(false);
   const [data, setData] = useState(JSON.parse(localStorage.getItem('Data')) || []);
 
   useEffect(() => {
@@ -114,8 +44,6 @@ function FormComponent() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    // if (name === "email") setEmail(true);
-    // if (name === "contactNo") setContact(true);
     setFormData({ ...formData, [name]: value });
   };
 
@@ -162,7 +90,6 @@ function FormComponent() {
           <div className='status'>
             {errors.email?<span>&#10060;</span>:<p>&#10003;</p>}
           </div>
-          {/* {email && <p className="error">{errors.email}</p>} */}
         </div>
         <div className='form-entry'>
           <label>Contact No:</label>
