@@ -33,6 +33,10 @@ git clone https://github.com/Guptaverse/digitalPaani.git
 ```bash
 npm install
 ```
+### 3. Final Command to start the project
+```bash
+npm start
+```
 
 This project is live and deployed at [https://digital-paani.vercel.app/](https://digital-paani.vercel.app/).
 
