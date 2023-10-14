@@ -27,7 +27,7 @@ To make the most out of this repository, follow these steps:
 
 ### 1. Clone this Repository
 ```bash
-git clone [<repository_url>](https://github.com/Guptaverse/digitalPaani.git)
+git clone https://github.com/Guptaverse/digitalPaani.git
 ```
 ### 2. Change directory and run this command.
 ```bash
