@@ -2,7 +2,7 @@ import React from 'react'
 import './Modal.css'
 
 const Modal = ({open,onClose,children}) => {
-    if(!open) return null;
+  if(!open) return null;
   return (
     <>
     <div className='modalBlur'>
